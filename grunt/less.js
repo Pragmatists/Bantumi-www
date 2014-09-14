@@ -1,12 +1,12 @@
 module.exports = {
 	build: {
 		files: {
-			'<%= dir.build %>/assets/main.css': '<%= dir.src %>/assets/main.less'
+			'<%= dir.build %>/main.css': '<%= dir.src %>/main.less'
 		}
 	},
 	compile: {
 		files: {
-			'<%= dir.build %>/assets/main.css': '<%= dir.src %>/assets/main.less'
+			'<%= dir.build %>/main.css': '<%= dir.src %>/main.less'
 		},
 		options: {
 			cleancss: true,
