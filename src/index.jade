@@ -1,0 +1,131 @@
+doctype html
+html(lang="pl")
+	head
+		title Bantumi
+		meta(charset="utf-8")
+		link(rel="stylesheet", type="text/css", href="main.css", media="all")
+	body
+		header
+			nav
+				ul
+					li: a(href="#okonkursie") O KONKURSIE
+					li: a(href="#organizatorzy") ORGANIZATORZY
+					li: a(href="#zasadygry") ZASADY GRY
+					li: a(href="#rejestracja") REJESTRACJA
+			.wrapper
+				img(src="assets/bantumi.png", alt="")
+				h1 KONKURS <strong>BANTUMI</strong> BOT
+				p 26-27 WRZEŚNIA
+
+
+		//- O Konkursie
+		section#okonkursie
+			.wrapper
+				h2 O KONKURSIE
+				
+				.description
+					p.
+						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+					p.
+						Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+					p.
+						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
+
+				.links
+					p Silnik gry <a class="small" href="https://github.com/Pragmatists/Bantumi/tree/master/engine">REPOZYTORIUM</a>
+					p Template bota <a class="small" href="https://github.com/Pragmatists/Bantumi/tree/master/sample-bot">REPOZYTORIUM</a>
+		
+
+		//- Organizatorzy
+		section#organizatorzy
+			.wrapper
+				h2 ORGANIZATORZY
+
+				.tile
+					.image
+						img(src="assets/pragmatists-logo.png", alt="Pragmatsts")
+					a.small(href="http://pragmatists.pl/") ZOBACZ WWW
+
+				.tile
+					.image
+						img(src="assets/warsjava-logo.png", alt="Warsjava")
+					a.small(href="http://warsjawa.pl/") ZOBACZ WWW
+
+
+
+		//- Nagrody
+		section#nagrody
+			.wrapper
+				h2 NAGRODY
+
+				.tile
+					.image
+						img(src="assets/prize.png", alt="")
+					p Neque porro quisquam  
+					a.small(href="http://warsjawa.pl/") SZCZEGÓŁY
+
+				.tile
+					.image
+						img(src="assets/prize.png", alt="")
+					p Neque porro quisquam  
+					a.small(href="http://warsjawa.pl/") SZCZEGÓŁY
+
+				.tile
+					.image
+						img(src="assets/prize.png", alt="")
+					p Neque porro quisquam  
+					a.small(href="http://warsjawa.pl/") SZCZEGÓŁY
+
+
+		//- Zasady gry
+		section#zasadygry
+			.wrapper
+				h2 ZASADY GRY
+
+				.bigtile
+					img(src="assets/rules.png", alt="")
+					p.right Twój koszyk z punktami
+					p Twoje koszyki
+
+				.rules
+					.tile
+						h3 1
+						.image: img(src="assets/rule-1.png", alt="")
+						p wybierasz jeden ze swoich koszyków z ziarnami i wsypujesz jego zawartość po jednym ziarnie do każdego kolejnego koszyka 
+
+					.tile
+						h3 2
+						.image: img(src="assets/rule-2.png", alt="")
+						p gdy skończysz na swoim koszyku z punktami, zyskujesz dodatkowy ruch 
+
+					.tile
+						h3 3
+						.image: img(src="assets/rule-3.png", alt="")
+						p nie wsypujesz ziaren do koszyka z punktami przeciwnika (omijasz) 
+
+				.rules
+					.tile
+						h3 4
+						.image: img(src="assets/rule-4.png", alt="")
+						p jeśli ostatnie ziarno wyląduje w twoim pustym koszuku, zabierasz to ziarno, oraz ziarna z koszyka naprzeciwko (przeciwnika) i wrzucasz do koszyka swoich punktów
+
+					.tile
+						h3 5
+						.image: img(src="assets/rule-5.png", alt="")
+						p gra kończy się gdy którykolwiek z graczy nie będzie miał już ziaren w koszykach (poza koszykiem punktów). Na koniec gry wszystkie ziarna lądują w koszykach punktów ich właścicieli.
+
+
+		//- Rejestracja
+		section#rejestracja
+			.wrapper
+				h2 REJESTRACJA
+				
+				form(action="", method="post")
+					fieldset
+						label(for="repository") Link do Twojego repozytorium 
+						input(type="text" name="repository" id="repository")
+						button(type="submit") WYŚLIJ
+
+
+
+
